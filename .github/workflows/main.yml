@@ -26,9 +26,8 @@ jobs:
     needs: [FetchMap]
     
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - run: git fetch --unshallow --tags
-      - name: Create Release
-        uses: terradatum/auto-action@master
+    - env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      name: Release
+      uses: ridedott/release-me-action@master
           
