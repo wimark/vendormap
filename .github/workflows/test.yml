@@ -1,5 +1,10 @@
 name: Autorelease
-on: repository_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: TEST  
+        required: false
 jobs:
   FetchMap:
     runs-on: ubuntu-latest
