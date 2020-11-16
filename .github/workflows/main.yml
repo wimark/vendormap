@@ -1,11 +1,11 @@
 name: Autorelease
 on:
-#  schedule:
-#    - cron: "30 5 * * *"
+  schedule:
+    - cron: "30 5 * * *"
   workflow_dispatch:
     inputs:
       git-ref:
-        description: TEST    
+        description: Force release  
         required: false
 jobs:
   FetchMap:
@@ -34,6 +34,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
+          tag_name: ${{ github.sha }}
           draft: false
           prerelease: false
