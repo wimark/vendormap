@@ -1,7 +1,12 @@
 name: Autorelease
 on:
-  schedule:
-    - cron: "30 5 * * *"
+#  schedule:
+#    - cron: "30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      git-ref:
+        description: TEST    
+        required: false
 jobs:
   FetchMap:
     runs-on: ubuntu-latest
