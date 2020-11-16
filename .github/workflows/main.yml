@@ -26,8 +26,10 @@ jobs:
     needs: [FetchMap]
     
     steps:
-    - env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      name: Release
-      uses: ridedott/release-me-action@master
-          
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Release
+        uses: justincy/github-action-npm-release@v1.2.0
+        id: release
