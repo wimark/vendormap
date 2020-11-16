@@ -26,12 +26,13 @@ jobs:
     needs: [FetchMap]
     
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Get previous tag
+      - uses: actions/checkout@v2.2.0
+        with:
+          fetch-depth: 0
+      - name: Get Previous tag
         id: previoustag
-        uses: "WyriHaximus/github-action-get-previous-tag@1.0.0"
-      - name: Get next minor version
+        uses: "WyriHaximus/github-action-get-previous-tag@master"
+      - name: Get next version
         id: semvers
         uses: "WyriHaximus/github-action-next-semvers@v1.0"
         with:
