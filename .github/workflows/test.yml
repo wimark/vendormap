@@ -1,6 +1,5 @@
 name: Autorelease
-on:
-  repository_dispatch
+on: repository_dispatch
 jobs:
   FetchMap:
     runs-on: ubuntu-latest
