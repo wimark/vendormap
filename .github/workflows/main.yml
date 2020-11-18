@@ -34,14 +34,14 @@ jobs:
     needs: [FetchMap]
     
     steps:
+      - uses: actions/checkout@v2.2.0
+        with:
+          fetch-depth: 0
+      
       - id:  new_hash
         shell: sh
         run: |
           echo "::set-output name=hash::$(git log -1 --format=%h)"
-      
-      - uses: actions/checkout@v2.2.0
-        with:
-          fetch-depth: 0
 
       - name: Get Previous tag
         id: previoustag
