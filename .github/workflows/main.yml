@@ -46,6 +46,15 @@ jobs:
         run: |
           echo "::set-output name=hash::$(git log -1 --format=%h)"
 
+      - id: dbg
+        shell: sh
+        env:
+          PREV_HASH: ${{ needs.FetchMap.outputs.prev_hash }}
+          POST_HASH: ${{ steps.new_hash.outputs.hash }}
+        run: |
+          echo "$PREV_HASH"
+          echo "$POST_HASH"
+
       - name: Get Previous tag
         id: previoustag
         uses: "WyriHaximus/github-action-get-previous-tag@master"
