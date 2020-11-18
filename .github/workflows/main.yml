@@ -63,7 +63,7 @@ jobs:
           version: ${{ steps.previoustag.outputs.tag }}
 
       - name: Create Release
-        if: needs.FetchMap.outputs.prev_hash != needs.FetchMap.outputs.new_hash
+        if: needs.FetchMap.outputs.prev_hash != needs.FetchMap.outputs.post_hash
         id: create_release
         uses: actions/create-release@v1
         env:
