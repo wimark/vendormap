@@ -1,4 +1,5 @@
 name: Autorelease
+
 on:
   schedule:
     - cron: "30 0 * * *"
@@ -20,7 +21,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - id: prev_hash
-        shell: sh
         run: |
           echo "::set-output name=pohash::$(git log -1 --format=%h)"
 
@@ -31,7 +31,6 @@ jobs:
           commit_message: Daily autoupdate
 
       - id: new_hash
-        shell: sh
         run: |
           echo "::set-output name=prhash::$(git log -1 --format=%h)"
 
@@ -46,6 +45,8 @@ jobs:
         env:
           PREV_HASH: ${{ needs.FetchMap.outputs.prev_hash }}
           POST_HASH: ${{ needs.FetchMap.outputs.new_hash }}
+        run: |
+          echo "$PREV_HASH -> $POST_HASH"
 
       - name: Get Previous tag
         id: previoustag
