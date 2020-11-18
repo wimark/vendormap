@@ -7,13 +7,21 @@ on:
       git-ref:
         description: Force release  
         required: false
+
 jobs:
   FetchMap:
     runs-on: ubuntu-latest
+    outputs:
+      prev_hash: ${{ steps.prev_hash.outputs.hash }}
     steps:
       - uses: actions/checkout@v2
         with:
           ref: ${{github.head_ref}}
+      
+      - id: prev_hash
+        shell: sh
+        run: |
+          echo "::set-output name=hash::$(git log -1 --format=%h)"
       
       - run: "./oui_update.sh"
       
@@ -26,18 +34,27 @@ jobs:
     needs: [FetchMap]
     
     steps:
+      - id:  new_hash
+        shell: sh
+        run: |
+          echo "::set-output name=hash::$(git log -1 --format=%h)"
+      
       - uses: actions/checkout@v2.2.0
         with:
           fetch-depth: 0
+
       - name: Get Previous tag
         id: previoustag
         uses: "WyriHaximus/github-action-get-previous-tag@master"
+        
       - name: Get next version
         id: semvers
         uses: "WyriHaximus/github-action-next-semvers@v1.0"
         with:
           version: ${{ steps.previoustag.outputs.tag }}
+          
       - name: Create Release
+        if: needs.FetchMap.outputs.prev_hash != steps.new_hash.outputs.hash
         id: create_release
         uses: actions/create-release@v1
         env:
