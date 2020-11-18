@@ -14,17 +14,16 @@ jobs:
   FetchMap:
     runs-on: ubuntu-latest
     outputs:
-      prev_hash: ${{ steps.prev_hash.outputs.hash }}
+      prev_hash: ${{ steps.prev_hash.outputs.prhash }}
+      new_hash: ${{ steps.new_hash.outputs.pohash }}
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{github.head_ref}}
 
       - id: prev_hash
         shell: sh
         run: |
-          echo "::set-output name=hash::$(git log -1 --format=%h)"
+          echo "::set-output name=pohash::$(git log -1 --format=%h)"
 
       - run: "./oui_update.sh"
 
@@ -32,28 +31,22 @@ jobs:
         with:
           commit_message: Daily autoupdate
 
+      - id: new_hash
+        shell: sh
+        run: |
+          echo "::set-output name=prhash::$(git log -1 --format=%h)"
+
   Release:
     runs-on: ubuntu-latest
     needs: [FetchMap]
 
     steps:
-      - uses: actions/checkout@v2.2.0
-        with:
-          fetch-depth: 0
-
-      - id:  new_hash
-        shell: sh
-        run: |
-          echo "::set-output name=hash::$(git log -1 --format=%h)"
+      - uses: actions/checkout@v2
 
       - id: dbg
-        shell: sh
         env:
           PREV_HASH: ${{ needs.FetchMap.outputs.prev_hash }}
-          POST_HASH: ${{ steps.new_hash.outputs.hash }}
-        run: |
-          echo "$PREV_HASH"
-          echo "$POST_HASH"
+          POST_HASH: ${{ needs.FetchMap.outputs.new_hash }}
 
       - name: Get Previous tag
         id: previoustag
@@ -66,7 +59,7 @@ jobs:
           version: ${{ steps.previoustag.outputs.tag }}
 
       - name: Create Release
-        if: needs.FetchMap.outputs.prev_hash != steps.new_hash.outputs.hash
+        if: needs.FetchMap.outputs.prev_hash != needs.FetchMap.outputs.new_hash
         id: create_release
         uses: actions/create-release@v1
         env:
