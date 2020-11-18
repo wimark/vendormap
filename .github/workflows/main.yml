@@ -1,5 +1,4 @@
 name: Autorelease
-
 on:
   schedule:
     - cron: "30 0 * * *"
