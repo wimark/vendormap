@@ -73,3 +73,21 @@ jobs:
           release_name: v${{ steps.semvers.outputs.patch }}
           draft: false
           prerelease: false
+
+      - name: tg new update
+        if: needs.FetchMap.outputs.prev_hash != needs.FetchMap.outputs.post_hash
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            vendormap updated!
+            
+      - name: tg no updates
+        if: needs.FetchMap.outputs.prev_hash == needs.FetchMap.outputs.post_hash
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            there is no updates for vendormap!
