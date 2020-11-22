@@ -25240,6 +25240,7 @@ var ManufacturerMap = map[string]string{
 "C42C4F": "Qingdao Hisense",
 "C42F90": "Hangzhou Hikvision Digital",
 "C43018": "MCS Logic",
+"C430CA": "SD Biosensor",
 "C432D1": "Farlink",
 "C43306": "China Mobile Group Device",
 "C4346B": "HP",
