@@ -21120,6 +21120,7 @@ var ManufacturerMap = map[string]string{
 "80BBEB": "Satmap",
 "80BE05": "Apple",
 "80C16E": "HP",
+"80C501": "OctoGate IT Security",
 "80C548": "Shenzhen Zowee",
 "80C5E6": "Microsoft",
 "80C5F2": "Azurewave",
