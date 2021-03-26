@@ -26352,7 +26352,7 @@ var ManufacturerMap = map[string]string{
 "CC37AB": "Edgecore",
 "CC398C": "Shiningtek",
 "CC3A61": "Samsung",
-"CC3ADF": "Private",
+"CC3ADF": "Neptune Group",
 "CC3B27": "Tecno",
 "CC3B3E": "Lester Electrical",
 "CC3B58": "Curiouser",
