@@ -18146,6 +18146,7 @@ var ManufacturerMap = map[string]string{
 "502FA8": "Cisco",
 "5031AD": "ABB Global",
 "503237": "Apple",
+"50325F": "Silicon",
 "503275": "Samsung",
 "50338B": "Texas Instruments",
 "5033F0": "Yichen",
