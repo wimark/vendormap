@@ -18484,6 +18484,7 @@ var ManufacturerMap = map[string]string{
 "5474E6": "Webtech Wireless",
 "547595": "TP-Link",
 "5475D0": "Cisco",
+"547787": "Earda",
 "54778A": "HP",
 "54781A": "Cisco",
 "547975": "Nokia",
