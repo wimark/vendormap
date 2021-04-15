@@ -25815,6 +25815,7 @@ var ManufacturerMap = map[string]string{
 "C0F6C2": "Huawei",
 "C0F6EC": "Huawei",
 "C0F79D": "Powercode",
+"C0F827": "Rapidmax",
 "C0F8DA": "Hon Hai Precision",
 "C0F945": "Toshiba",
 "C0F991": "GME Standard P/L",
