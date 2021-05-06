@@ -9664,7 +9664,7 @@ var ManufacturerMap = map[string]string{
 "0025DC": "Sumitomo Electric",
 "0025DD": "Sunnytek Information",
 "0025DE": "Probits",
-"0025DF": "Taser",
+"0025DF": "Private",
 "0025E0": "CeedTec Sdn Bhd",
 "0025E1": "Shanghai Seeyoo",
 "0025E2": "Everspring",
