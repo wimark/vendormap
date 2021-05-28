@@ -18438,6 +18438,7 @@ var ManufacturerMap = map[string]string{
 "50E24E": "ZTE",
 "50E549": "Giga-Byte",
 "50E666": "Shenzhen Techtion",
+"50E7A0": "Renesas",
 "50E971": "Jibo",
 "50EAD6": "Apple",
 "50EB1A": "Brocade",
