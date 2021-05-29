@@ -3282,7 +3282,7 @@ var ManufacturerMap = map[string]string{
 "000CE9": "Bloomberg L.P",
 "000CEA": "aphona Kommunikationssysteme",
 "000CEB": "CNMP",
-"000CEC": "Spectracom",
+"000CEC": "Orolia USA",
 "000CED": "Real Digital Media",
 "000CEE": "jp-embedded",
 "000CEF": "Open",
