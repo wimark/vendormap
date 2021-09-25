@@ -14208,6 +14208,7 @@ var ManufacturerMap = map[string]string{
 "10E77A": "STMicrolectronics",
 "10E7C6": "HP",
 "10E878": "Nokia",
+"10E8A7": "Wistron",
 "10E8EE": "PhaseSpace",
 "10E953": "Huawei",
 "10EA59": "Cisco SPVTG",
