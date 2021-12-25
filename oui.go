@@ -25818,6 +25818,7 @@ var ManufacturerMap = map[string]string{
 "B41513": "Huawei",
 "B4157E": "Celona",
 "B41780": "DTI Group",
+"B417A8": "Facebook",
 "B418D1": "Apple",
 "B41A1D": "Samsung",
 "B41BB0": "Apple",
