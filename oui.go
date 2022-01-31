@@ -26762,6 +26762,7 @@ var ManufacturerMap = map[string]string{
 "BCC493": "Cisco",
 "BCC61A": "Spectra Embedded",
 "BCC6DB": "Nokia",
+"BCC746": "Hon Hai Precision",
 "BCC810": "Cisco SPVTG",
 "BCCAB5": "ARRIS",
 "BCCD45": "Voismart",
