@@ -17693,6 +17693,7 @@ var ManufacturerMap = map[string]string{
 "40AA56": "China Dragon",
 "40AC8D": "Data Management",
 "40ACBF": "Hangzhou Hikvision Digital",
+"40B02F": "Miele & Cie",
 "40B034": "HP",
 "40B076": "ASUS",
 "40B0A1": "Valcom",
