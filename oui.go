@@ -32228,6 +32228,7 @@ var ManufacturerMap = map[string]string{
 "FC2FEF": "UTT",
 "FC3288": "CELOT Wireless",
 "FC3342": "Juniper",
+"FC3357": "KAGA FEI",
 "FC335F": "Polyera",
 "FC3497": "ASUS",
 "FC3598": "Favite",
