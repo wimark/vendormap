@@ -30685,6 +30685,7 @@ var ManufacturerMap = map[string]string{
 "E41F13": "IBM",
 "E41F7B": "Cisco",
 "E41FE9": "Dunkermotoren",
+"E42150": "Shanghai Chint low voltage electrical",
 "E422A5": "Plantronics",
 "E4233C": "Juniper",
 "E42354": "Shenzhen Fuzhi",
