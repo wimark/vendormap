@@ -28215,6 +28215,7 @@ var ManufacturerMap = map[string]string{
 "C0C522": "ARRIS",
 "C0C569": "Shanghai Lynuc CNC",
 "C0C687": "Cisco SPVTG",
+"C0C70A": "Ruckus",
 "C0C946": "Mitsuya",
 "C0C976": "Shenzhen TINNO",
 "C0C9E3": "TP-Link",
