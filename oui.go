@@ -15885,7 +15885,7 @@ var ManufacturerMap = map[string]string{
 "24A074": "Apple",
 "24A160": "Espressif",
 "24A2E1": "Apple",
-"24A42C": "KOUKAAM a.s",
+"24A42C": "NETIO a.s",
 "24A43C": "Ubiquiti",
 "24A487": "Huawei",
 "24A495": "Thales Canada",
