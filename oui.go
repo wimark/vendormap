@@ -21703,6 +21703,7 @@ var ManufacturerMap = map[string]string{
 "70041D": "Espressif",
 "700433": "California Things",
 "700514": "LG",
+"700692": "IEEE Registration Authority",
 "7006AC": "Eastcompeace",
 "700777": "OnTarget",
 "700971": "Samsung",
