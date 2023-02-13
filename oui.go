@@ -24351,6 +24351,7 @@ var ManufacturerMap = map[string]string{
 "8CF112": "Motorola",
 "8CF228": "Mercury",
 "8CF319": "Siemens",
+"8CF3E7": "solidotech",
 "8CF5A3": "Samsung",
 "8CF681": "Silicon",
 "8CF710": "AMPAK",
