@@ -15926,7 +15926,7 @@ var ManufacturerMap = map[string]string{
 "24BCF8": "Huawei",
 "24BE05": "HP",
 "24BE18": "Dadoutek",
-"24BF74": "Private",
+"24BF74": "Hamamatsu Photonics K.K",
 "24C0B3": "RSF",
 "24C17A": "Beijing Iactive Network",
 "24C1BD": "Crrc Dalian R&D",
