@@ -29212,6 +29212,7 @@ var ManufacturerMap = map[string]string{
 "C8675E": "Extreme",
 "C868DE": "Huawei",
 "C869CD": "Apple",
+"C86BBC": "IEEE Registration Authority",
 "C86C1E": "Display",
 "C86C20": "Sichuan Tianyi Comheart Telecom",
 "C86C3D": "Amazon",
