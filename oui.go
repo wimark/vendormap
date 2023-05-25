@@ -19967,6 +19967,7 @@ var ManufacturerMap = map[string]string{
 "54DC1D": "Yulong",
 "54DED0": "Sevio Srl",
 "54DF00": "Ulterius",
+"54DF1B": "Vestel",
 "54DF24": "Fiberhome",
 "54DF63": "Intrakey",
 "54E005": "Fiberhome",
