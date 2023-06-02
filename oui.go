@@ -29483,6 +29483,7 @@ var ManufacturerMap = map[string]string{
 "C89C1D": "Cisco",
 "C89CDC": "Elitegroup",
 "C89D18": "Huawei",
+"C89D6D": "Itel",
 "C89E43": "Netgear",
 "C89E61": "Lyngsoe",
 "C89F1A": "Huawei",
