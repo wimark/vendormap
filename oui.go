@@ -16682,6 +16682,7 @@ var ManufacturerMap = map[string]string{
 "2CAB00": "Huawei",
 "2CAB25": "Shenzhen Gongjin",
 "2CAB33": "Texas Instruments",
+"2CAB46": "Ruckus",
 "2CABA4": "Cisco SPVTG",
 "2CABEB": "Cisco",
 "2CAC44": "Conextop",
